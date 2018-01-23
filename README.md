@@ -12,7 +12,7 @@ string result = monney.NumRomaninanMonneyWords();
 
 ### Results
 
-| Input | Restul |
+| Input | Result |
 | ------ | ------ |
 |1100.22 | o mie o suta lei virgula douazeci si doi bani|
 |31433200.222 | treizeci si unu milioane, patru sute treizeci si trei mii, doua sute lei virgula douazeci si doi bani|

@@ -27,12 +27,10 @@ namespace DoubleParse
             {
                 if (words != "")
                     words += " virgula ";
-                int counter = decPart.ToString().Length;
+                int counter = Math.Truncate(decPart * 100).ToString().Length;
                 switch (counter)
                 {
                     case 0: break;
-                    case 1: words += decPart.NumWords() + " bani"; break;
-                    case 2: words += decPart.NumWords() + " bani"; break;
                     default: words += Math.Truncate(decPart * 100).NumWords() + " bani"; break;
                 }
             }
@@ -70,7 +68,7 @@ namespace DoubleParse
                 {
                     if (n % pow > 0)
                     {
-                        if (Math.Floor(n % pow % Math.Pow(10, 3)) == 1)
+                        if (Math.Floor(n / pow) == 1)
                         {
                             words += NumWords(Math.Floor(n / pow), false) + " " + suffixesArr[(power / 3) - 1] + ", ";
                         }

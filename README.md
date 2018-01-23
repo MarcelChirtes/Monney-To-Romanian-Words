@@ -1,9 +1,9 @@
 # Monney-To-Romanian-Words
 
-Is a tool that transforms doubles in romanian words, check verbiage before using it, have fun :)
+Is a tool that transforms doubles numbers in romanian words, check verbiage before using it, have fun :)
 
 ### Ussage
-Converts double to with romaninan words monney:
+Converts double to with romaninan monney words:
 
 ```sh
 double monney = 1100.22; 
